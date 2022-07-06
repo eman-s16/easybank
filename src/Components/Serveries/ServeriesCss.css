@@ -1,0 +1,33 @@
+.Serveries {
+	background-color: var(--LightGrayishBlue);
+}
+
+.Serveries .pText {
+	width: 75%;
+	margin: 30px 0;
+}
+@media screen and (max-width: 968px) {
+	.Serveries .pText {
+		width: 100%;
+		margin: 30px 0;
+	}
+}
+.Serveries .ServPart {
+	display: inline-grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	column-gap: 2.5%;
+}
+.Serveries .itemSrev h3 {
+	margin: 20px 0;
+}
+.Srev .itemSrev p {
+	letter-spacing: .5px;
+	font-size: 16px;
+}
+@media screen and (max-width: 968px) {
+	.Serveries .ServPart {
+		display: grid;
+		grid-template-columns: 100%;
+		row-gap: 20px;
+	}
+}

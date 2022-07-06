@@ -1,0 +1,127 @@
+.header {
+	background-color: var(--White);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	height: 80px;
+	box-shadow: 0px 3px 17px 2px #c7c7c7;
+}
+/* list */
+@media screen and (min-width: 968px) {
+	.header .menu {
+		display: block;
+	}
+	.btnMunePhone {
+		display: none;
+	}
+	.closePhone {
+		display: none;
+	}
+}
+@media screen and (max-width: 968px) {
+	.header {
+		height: 60px;
+	}
+	.header .Box {
+		align-items: left;
+		flex-direction: row;
+		margin: 20px;
+		position: relative;
+	}
+	.header .menu {
+		display: none;
+	}
+}
+
+.header .menu ul {
+	display: flex;
+	align-items: center;
+}
+.header .menu ul li {
+	padding: 30px 20px 20px;
+	height: 80px;
+	list-style-type: none;
+	font-weight: 300;
+	color: var(--rayishBlue);
+}
+.header .menu ul li:hover {
+	border-bottom: 5px solid;
+	border-image-slice: 1;
+	border-image: var(--gradient);
+	color: black;
+}
+@media screen and (max-width: 968px) {
+	.header .menu.phoneStatus {
+		display: block;
+	}
+	.header .phoneStatus ul {
+		position: absolute;
+		top: 50px;
+		left: 0px;
+		margin: 0 auto;
+		width: calc(100vw - 50px);
+		height: 307px;
+		background-color: white;
+		z-index: 12;
+		flex-direction: column;
+		border-radius: 10px;
+		box-shadow: 0px 3px 17px 2px #c7c7c7;
+	}
+	.header .menu.phoneStatus ul li {
+		padding: 15px 20px 5px;
+		width: 100%;
+	}
+
+	.header .btnHeader {
+		display: none;
+	}
+}
+/* btn phone */
+.close {
+	display: none;
+}
+@media screen and (max-width: 968px) {
+	.btnMunePhone {
+		display: block;
+		width: 30px;
+		height: 20px;
+		cursor: pointer;
+	}
+	.btnMunePhone span {
+		width: 30px;
+		height: 3px;
+		background-color: var(--DarkBlue);
+		display: block;
+		margin-bottom: 5px;
+	}
+	.btnMunePhone span:last-of-type {
+		margin-bottom: 0;
+	}
+	.btnMunePhone:hover span {
+		background-color: var(--LimeGreen);
+	}
+
+	.closePhone {
+		display: block;
+	}
+	.closePhone:hover {
+		filter: invert(75%) sepia(10%) saturate(2758%) hue-rotate(86deg) brightness(88%) contrast(92%);
+	}
+}
+
+@media screen and (max-width: 968px) {
+	.header .grey {
+		display: none;
+		position: absolute;
+		top: 40px;
+		left: -20px;
+		background-color: #2f2f2f8f;
+		width: 100vw;
+		height: 100vh;
+		z-index: -32;
+		margin: 0;
+		padding: 0;
+	}
+}

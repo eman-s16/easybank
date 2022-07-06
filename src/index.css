@@ -1,13 +1,34 @@
+:root {
+	--DarkBlue: hsl(233, 26%, 24%);
+	--LimeGreen: hsl(136, 65%, 51%);
+	--BrightCyan: hsl(192, 70%, 51%);
+	--rayishBlue: hsl(233, 8%, 62%);
+	--LightGrayishBlue: hsl(220, 16%, 96%);
+	--VeryLightGray: hsl(0, 0%, 98%);
+	--White: hsl(0, 0%, 100%);
+	--gradient: linear-gradient(to left, var(--BrightCyan), var(--LimeGreen)) 0 0 100% 0/5px 5px 5px 5px;
+	--gradientBackground: linear-gradient(to left, var(--BrightCyan), var(--LimeGreen));
+	--hover: linear-gradient(to left, var(--LimeGreen), var(--BrightCyan));
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	font-family: 'Kanit', sans-serif;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-family: 'Public Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 18px;
+	background-color: var(--VeryLightGray);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: var(--rayishBlue);
 }
